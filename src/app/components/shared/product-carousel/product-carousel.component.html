@@ -1,0 +1,27 @@
+<div class="site-section">
+  <div class="container">
+    <div class="row">
+      <div class="title-section text-center mb-5 col-12">
+        <h2 class="text-uppercase">{{ title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 block-3">
+        <div class="nonloop-block-3 owl-carousel">
+
+          @for (product of products; track product.title) {
+          <div class="item">
+            <div class="item-entry">
+              <app-product [product]="product"></app-product>
+            </div>
+          </div>
+          }
+          @empty {
+          <div>No products found</div>
+          }
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

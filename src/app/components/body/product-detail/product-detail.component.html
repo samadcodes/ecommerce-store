@@ -1,0 +1,90 @@
+<div class="site-section" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="title-section mb-5 col-12">
+                <h2 class="text-uppercase">{{ product.title }}</h2>
+            </div>
+        </div>
+        
+        <div class="row align-items-between">
+            <div class="col-lg-4 col-md-6 item-entry mb-4">
+                <a class="product-item md-height bg-gray d-block">
+                    <img [src]="'assets/images/' + product.imageName" alt="Image" class="img-fluid">
+                </a>
+
+                <strong class="item-price"><del>{{ product.oldPrice | currency: 'USD' }}</del> {{ product.price | currency: 'USD'
+                    }}</strong>
+                
+                <div class="star-rating">
+                    @for (star of product.rating | iterable; track $index) {
+                    <span class="icon-star2 text-warning"></span>
+                    }
+                </div>
+            </div>    
+            
+            <div class="col-lg-8 col-md-8 item-entry my-3 d-flex flex-column justify-content-between">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae officiis commodi atque facilis nulla, temporibus repellendus voluptatem est nam distinctio adipisci. Accusamus perferendis ea minus, hic voluptate ab ut! Nulla, nobis nisi libero perferendis amet inventore unde fuga us replectus magnam aperiam minima quibusdam expedita officia. Quas ut sit debitis non, explicabo cupiditate amet laboriosam deleniti. Alias quaerat similique porro molestiae cumque blanditiis maxime ipsum eius animi mollitia deserunt harum nostrum voluptates adipisci fuga, doloribus nisi commodi. Optio totam esse beatae aut nulla ea provident vel architecto nisi ut!
+                    <br>
+                    laboriosam deleniti. Alias quaerat similique porro molestiae cumque blanditiis maxime ipsum eius animi mollitia deserunt harum nostrum voluptates adipisci fuga, doloribus nisi commodi. Optio totam esse beatae aut nulla ea provident vel architecto nisi ut!
+                </p>
+                <div class="d-flex justify-content-end">
+                    <button class="btn icon-heart-o"></button>
+                    <button class="btn btn-primary ml-2">Add to cart</button>
+                </div>
+            </div>             
+
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-8 mr-auto"> <!-- Decrease overall width and align to the left -->
+                <h5>Reviews</h5>
+                <hr>
+                <!-- Individual review -->
+                <div class="review">
+                    <div class="review-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4>Goofy Don</h4>
+                        </div>
+                        <div class="star-rating">
+                            @for (star of product.rating | iterable; track $index) {
+                            <span class="icon-star2 text-warning"></span>
+                            }
+                        </div>
+                    </div>
+                    <p class="review-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet semper magna.</p>
+                </div>
+                <!-- Individual review -->
+                <div class="review">
+                    <div class="review-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4>Shami Amjad</h4>
+                        </div>
+                        <div class="star-rating">
+                            @for (star of product.rating | iterable; track $index) {
+                            <span class="icon-star2 text-warning"></span>
+                            }
+                        </div>
+                    </div>
+                    <p class="review-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident est esse iure officiis et. Iure corporis autem placeat quisquam!</p>
+                </div>
+                <!-- Individual review -->
+                <div class="review">
+                    <div class="review-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4>Raju bhai</h4>
+                        </div>
+                        <div class="star-rating">
+                            @for (star of product.rating | iterable; track $index) {
+                            <span class="icon-star2 text-warning"></span>
+                            }
+                        </div>
+                    </div>
+                    <p class="review-comment">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
