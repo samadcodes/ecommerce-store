@@ -1,10 +1,12 @@
-<div class="site-section">
+<div class="site-section" data-aos="fade">
     <div class="container">
-        <div class="row">
-            <div class="title-section mb-5 col-12">
-                <h2 class="text-uppercase">{{ title }}</h2>
+        @if (title) {
+            <div class="row">
+                <div class="title-section mb-5 col-12">
+                    <h2 class="text-uppercase">{{ title }}</h2>
+                </div>
             </div>
-        </div>
+        }
         <div class="row">
 
             @for (product of products; track product.title) {

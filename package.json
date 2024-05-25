@@ -24,6 +24,8 @@
     "@nguniversal/express-engine": "^7.0.2",
     "aos": "^2.3.4",
     "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "owl.carousel": "^2.3.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.4"

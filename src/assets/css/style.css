@@ -590,17 +590,22 @@ a {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+}
   .block-3 .owl-nav .owl-prev, .block-3 .owl-nav .owl-next {
     position: relative;
     display: inline-block;
     padding: 20px;
-    font-size: 30px;
-    color: #5c626e; }
+    font-size: 30px !important; /* To increase button size */
+    color: #5c626e;
+    outline: none; /* Removed outline */
+  }
     .block-3 .owl-nav .owl-prev:hover, .block-3 .owl-nav .owl-next:hover {
-      color: #25262a; }
+      color: #25262a;
+    }
     .block-3 .owl-nav .owl-prev.disabled, .block-3 .owl-nav .owl-next.disabled {
-      opacity: .2; }
+      opacity: .2;
+    }
 
 .block-4 {
   -webkit-box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.1);
@@ -911,17 +916,17 @@ a {
     height: 300px;
     padding: 40px; }
   .product-item.md-height {
-    height: 400px;
+    height: 350px; /*changed from 400px to make product item a square*/
     padding: 40px; }
   .product-item img {
     left: 50%;
-    top: 15%;
+    top: 0%;  /*changed from 15% to make product item a square*/
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     -o-object-fit: cover;
     object-fit: cover;
-    max-width: 300px;
+    max-width: 350px;  /*changed from 300px to make product item a square*/
     position: absolute; }
 
 .item-entry .product-item {

@@ -1,12 +1,14 @@
-<a [routerLink]="['product/', product.id]" class="product-item md-height bg-gray d-block">
-    <img [src]="'assets/images/' + product.imageName" alt="Image" class="img-fluid">
-</a>
-<h2 class="item-title"><a [routerLink]="['product/', product.id]">{{ product.title }}</a></h2>
-<strong class="item-price"><del>{{ product.oldPrice | currency: 'USD' }}</del> {{ product.price | currency: 'USD'
-    }}</strong>
+@if (product) {
+    <a [routerLink]="['product/', product.id]" class="product-item md-height bg-gray d-block">
+        <img [src]="'assets/images/' + product.imageName" alt="Image" class="img-fluid">
+    </a>
+    <h2 class="item-title"><a [routerLink]="['product/', product.id]">{{ product.title }}</a></h2>
+    <strong class="item-price"><del>{{ product.oldPrice | currency: 'USD' }}</del> {{ product.price | currency: 'USD'
+        }}</strong>
 
-<div class="star-rating">
-    @for (star of product.rating | iterable; track $index) {
-    <span class="icon-star2 text-warning"></span>
-    }
-</div>
+    <div class="star-rating">
+        @for (star of product.rating | iterable; track $index) {
+        <span class="icon-star2 text-warning"></span>
+        }
+    </div>
+}

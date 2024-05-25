@@ -7,6 +7,8 @@ import { ProductModel } from '../models/product.model';
 export class ProductService {
 
   popularProducts: ProductModel[] = []
+  melodyKits: ProductModel[] = []
+  drumKits: ProductModel[] = []
 
   constructor() { 
     // Initialize popularProducts array with dummy products
@@ -92,12 +94,172 @@ export class ProductService {
         imageName: 'model_7.png'
       }
     ];
+
+    this.melodyKits = [
+      {
+        id: 1,
+        title: 'Product 1',
+        oldPrice: 50.99,
+        price: 40.00,
+        rating: 4,
+        imageName: 'prod_2.png'
+      },
+      {
+        id: 6,
+        title: 'Product 6',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'model_7.png'
+      },
+      {
+        id: 1,
+        title: 'Product 1',
+        oldPrice: 50.99,
+        price: 40.00,
+        rating: 4,
+        imageName: 'prod_2.png'
+      },
+      {
+        id: 6,
+        title: 'Product 6',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'model_7.png'
+      },
+      {
+        id: 1,
+        title: 'Product 1',
+        oldPrice: 50.99,
+        price: 40.00,
+        rating: 4,
+        imageName: 'prod_2.png'
+      },
+      {
+        id: 6,
+        title: 'Product 6',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'model_7.png'
+      },
+      {
+        id: 6,
+        title: 'Product 6',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'model_7.png'
+      },
+      {
+        id: 1,
+        title: 'Product 1',
+        oldPrice: 50.99,
+        price: 40.00,
+        rating: 4,
+        imageName: 'prod_2.png'
+      },
+      {
+        id: 6,
+        title: 'Product 6',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'model_7.png'
+      }
+    ];
+
+    this.drumKits = [
+      {
+        id: 2,
+        title: 'Product 2',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'prod_3.png'
+      },
+      {
+        id: 4,
+        title: 'Product 4',
+        oldPrice: 70.00,
+        price: 55.00,
+        rating: 5,
+        imageName: 'prod_1.png'
+      },
+      {
+        id: 5,
+        title: 'Product 5',
+        oldPrice: 50.00,
+        price: 40.00,
+        rating: 4,
+        imageName: 'model_1.png'
+      },
+      {
+        id: 2,
+        title: 'Product 2',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'prod_3.png'
+      },
+      {
+        id: 4,
+        title: 'Product 4',
+        oldPrice: 70.00,
+        price: 55.00,
+        rating: 5,
+        imageName: 'prod_1.png'
+      },
+      {
+        id: 5,
+        title: 'Product 5',
+        oldPrice: 50.00,
+        price: 40.00,
+        rating: 4,
+        imageName: 'model_1.png'
+      },
+      {
+        id: 2,
+        title: 'Product 2',
+        oldPrice: 60.00,
+        price: 45.00,
+        rating: 3,
+        imageName: 'prod_3.png'
+      },
+      {
+        id: 4,
+        title: 'Product 4',
+        oldPrice: 70.00,
+        price: 55.00,
+        rating: 5,
+        imageName: 'prod_1.png'
+      },
+      {
+        id: 5,
+        title: 'Product 5',
+        oldPrice: 50.00,
+        price: 40.00,
+        rating: 4,
+        imageName: 'model_1.png'
+      }
+    ];
   }
 
   getPopularProducts(){
     return this.popularProducts;
   }
   getMostRatedProducts(){
+    return this.popularProducts;
+  }
+
+  getMelodyKits(){
+    return this.melodyKits;
+  }
+  getDrumKits(){
+    return this.drumKits;
+  }
+  getVSTs(){
     return this.popularProducts;
   }
 

@@ -13,7 +13,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <div class="logo">
                 <div class="site-logo">
-                    <a href="index.html" class="js-logo-clone">ShopMax</a>
+                    <a href="index.html" class="js-logo-clone">sbx collective</a>
                 </div>
             </div>
             <div class="main-nav d-none d-lg-block">
@@ -21,7 +21,7 @@
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                         <li class="has-children">
                             <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-                            <ul class="dropdown">
+                            <!-- <ul class="dropdown">
                                 <li><a >Menu One</a></li>
                                 <li><a >Menu Two</a></li>
                                 <li><a >Menu Three</a></li>
@@ -33,26 +33,27 @@
                                         <li><a >Menu Three</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </li>
 
-                        <li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
-                        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-                        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                        <li><a routerLink="/shop/melodykits" routerLinkActive="active">Melody Kits</a></li>
+                        <li><a routerLink="/shop/drumkits" routerLinkActive="active">Drum Kits</a></li>
+                        <li><a routerLink="/shop/vsts" routerLinkActive="active">VSTs</a></li>
+                        
+                        <!-- <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li> -->
+                        <!-- <li><a routerLink="/about" routerLinkActive="active">About</a></li> -->
 
-                        <!-- <li><a routerLink="/catalogue">Catalogue</a></li>
-                        <li><a routerLink="/arrivals">New Arrivals</a></li> -->
                     </ul>
                 </nav>
             </div>
             <div class="icons">
-                <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-                <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
-                <a href="cart.html" class="icons-btn d-inline-block bag">
+                <!-- <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a> -->
+                <!-- <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a> -->
+                <a routerLink="/cart" routerLinkActive="active" class="icons-btn d-inline-block bag">
                     <span class="icon-shopping-bag"></span>
                     <span class="number">2</span>
                 </a>
-                <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
+                <!-- <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a> -->
             </div>
         </div>
     </div>
